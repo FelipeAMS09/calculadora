@@ -1,10 +1,17 @@
-def soma(*args):
-    resultado = 0
-    for i in args:
-        resultado = resultado + i
 
-    print(f'resultado é {resultado  }')
-    return resultado
+
+def soma(x):
+    number2 = int(input('Digite outro número: '))
+    result = x + number2
+    while True:
+        condition = input('Escolha a operação: (+) (-) (*) (/) (=):')
+        if condition == '=':
+            break
+        elif condition == '+':
+            print(result)
+            number2 = int(input('Digite outro número: '))
+            result = result + number2    
+    print(result)
 
 def subtracao(x,y):
     x = int(input('Digite um número: '))
