@@ -53,6 +53,8 @@ while True:
             print('Escolha um NÚMERO!!')
             continue
         result = number / number2  
+    else:
+        break
 
     while True:
         condition = input('Escolha a operação: (+) (-) (*) (/) (=):')
@@ -101,4 +103,6 @@ while True:
                     continue
                 result = result / number2
                 break
+    
     print(result)
+    break
